@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script src="//cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
 </head>
 <body>
-  <h1>Hello Engliish</h1>
+  <div id="app"></div>
+  <style>
+    .playButton{
+      width: 20px;
+      height: 18px;
+      background: url("newconcept/img/playicon.png") no-repeat;
+      background-size: 18px 16px;
+      border-style: none;
+    }
+  </style>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      coverpage: true
+    }
+
+    window.playAudio = function(audioId){
+      document.getElementById(audioId).play();
+    }
+  </script>
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
 </html>
